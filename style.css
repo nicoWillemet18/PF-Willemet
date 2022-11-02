@@ -61,12 +61,13 @@ body {
 .sidebar {
     position: fixed;
     display: flex;
+    font-size: 19px;
     background-color: aliceblue;
-    padding: 10px;
     top: 80px;
     width: 100%;
     height: 50px;
     justify-content: space-around;
+    align-items: center;
     z-index: 200;
 }
 
@@ -151,6 +152,7 @@ body {
 
     .carousel-caption {
         font-size: large;
+        bottom: 75%;
     }
 
     .footer {
@@ -206,6 +208,15 @@ body {
         top: 100px;
     }
 
+    .carousel-caption {
+        font-size: x-large;
+        bottom: 75%;
+    }
+
+    .carousel-indicators {
+        bottom: 20%;
+    }
+
     .texto {
         width: 80%;
         margin-right: 30px;
@@ -216,7 +227,7 @@ body {
     }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1400px) {
     .sidebar__link {
         font-size: 35px;
     }
@@ -227,6 +238,11 @@ body {
     .paginaPrincipal {
         top: 100px;
     }
+
+    .carousel-caption {
+        font-size: xx-large;
+        bottom: 78%;
+    }
 }
 
 /*AUTOS*/
@@ -234,7 +250,6 @@ body {
 .sidebar__link1 {
     position: relative;
     font-size: x-large;
-    bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
 }
@@ -250,14 +265,16 @@ body {
 
 .catalogo__tarjeta {
     overflow: hidden;
-    position: relative;
-    width: 80%;
-    height: 540px;
+    width: 90%;
+    height: 550px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: aliceblue;
     text-align: center;
+    align-items: center;
 }
 
 .catalogo__tarjeta:hover {
@@ -270,143 +287,51 @@ body {
     top: 5px; 
 }
 
-.catalogo__tarjeta__img1 {
-    position: relative;
+.catalogo__tarjeta__img{
+    width: auto;
+    height: auto;
     height: 85%;
-    right: 250px;
-    width: 750px;
-}
-
-.catalogo__tarjeta__img2 {
-    position: relative;
-    height: 85%;
-    right: 230px;
-    width: 630px;
-}
-
-.catalogo__tarjeta__img3 {
-    position: relative;
-    height: 85%;
-    right: 180px;
-    width: 750px;
-}
-
-.catalogo__tarjeta__img4 {
-    position: relative;
-    height: 85%;
-    right: 280px;
-    width: 700px;
-}
-
-.catalogo__tarjeta__img5 {
-    position: relative;
-    height: 85%;
-    right: 80px;
-    width: 680px;
-}
-
-.catalogo__tarjeta__img6 {
-    position: relative;
-    height: 85%;
-    right: 50px;
-    width: 640px;
-}
-
-.catalogo__tarjeta__img7 {
-    position: relative;
-    height: 85%;
-    right: 60px;
-    width: 660px;
-}
-
-.catalogo__tarjeta__img8 {
-    position: relative;
-    height: 85%;
-    right: 130px;
-    width: 630px;
 }
 
 .pag {
     position: relative;
     top: 230px;
-}
+}   
 
-@media (min-width: 515px) {
-    .catalogo__tarjeta__img2 {
-        position: relative;
-        right: 230px;
-        width: 685px;
-        
-    }
-    .catalogo__tarjeta__img4 {
-        position: relative;
-        right: 280px;
-        width: 732px;
+@media (min-width: 768px) {
+    .sidebar__link1 {
+        font-size: xx-large;
     }
 }
 
-@media (min-width: 580px) {
+@media (min-width: 790px) {
     .catalogo {
-        position: relative;
-        top: 140px;
         display: grid;
         grid-template-columns: 50% 50%;
-        justify-content: row;
-        background-color: rgb(195, 218, 225);
-        padding-top: 10px;
     }
-}
-
-@media (min-width: 840px) {
-
-    .catalogo {
-        position: relative;
-        top: 140px;
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3% ;
-        justify-content: row;
-        background-color: rgb(195, 218, 225);
-        padding-top: 10px;
-    } 
 }
 
 @media (min-width: 1150px) {
-
-    .sidebar__link1 {
-        position: relative;
-        font-size: 40px;
-        bottom: 5px;
-        text-decoration: underline;
-
-    }
     .catalogo {
         width: 82%;
-        margin-left: 330px;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-    
-    .catalogo__tarjeta__img1 {
-    position: relative;
-    right: 370px;
-    width: 750px;
+        margin-left: 17%;
+        top: 100px;
     }
 
-    .catalogo__tarjeta__img2 {
-    position: relative;
-    right: 310px;
-    width: 630px;
+    .sidebar__link1 {
+        font-size: 33px;
     }
+}
 
-    .catalogo__tarjeta__img3 {
-    position: relative;
-    right: 250px;
-    width: 750px;
+@media (min-width: 1400px) {
+    .sidebar__link1 {
+        font-size: 38px;
     }
+}
 
-    .catalogo__tarjeta__img4 {
-    position: relative;
-    right: 350px;
-    width: 700px;
+@media (min-width: 1600px) {
+    .catalogo {
+        grid-template-columns: 33.3% 33.3% 33.3%;
     }
 }
 
@@ -415,67 +340,34 @@ body {
 .sidebar__link2 {
     position: relative;
     font-size: x-large;
-    bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
 }
 
-
-.catalogo__tarjeta__img9 {
-    position: relative;
-    height: 85%;
-    right: 60px;
+@media (min-width: 768px) {
+    .sidebar__link2 {
+        font-size: xx-large;
+    }
 }
 
-.catalogo__tarjeta__img10 {
-    position: relative;
-    height: 85%;
-    right: 140px;
+@media (min-width: 1150px) {
+    .sidebar__link2 {
+        font-size: 33px;
+    }
 }
 
-.catalogo__tarjeta__img11 {
-    position: relative;
-    height: 85%;
-    right: 100px;
+@media (min-width: 1400px) {
+    .sidebar__link2 {
+        font-size: 38px;
+    }
 }
 
-.catalogo__tarjeta__img12 {
-    position: relative;
-    height: 85%;
-    right: 30px;
-}
-
-.catalogo__tarjeta__img13 {
-    position: relative;
-    height: 85%;
-    right: 50px;
-}
-
-.catalogo__tarjeta__img14 {
-    position: relative;
-    height: 85%;
-    right: 100px;
-}
-
-.catalogo__tarjeta__img15 {
-    position: relative;
-    height: 85%;
-    right: 280px;
-}
-
-.catalogo__tarjeta__img16 {
-    position: relative;
-    height: 85%;
-    width: 700px;
-    right: 230px;
-}
 
 /*Financiación*/
 
 .sidebar__link3 {
     position: relative;
     font-size: x-large;
-    bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
 }
@@ -512,6 +404,7 @@ body {
     margin: auto;
     border-radius: 3px;
     height: 600px;
+    background-color: rgb(225, 238, 242);
 }
 
 
@@ -524,6 +417,9 @@ body {
 }
   .box{
     width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .box img{
@@ -538,6 +434,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .finan__principal__descrp__h2 {
@@ -545,7 +442,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: xx-large;
-    top: 40px;
+    top: 30px;
 }
 
 .finan__principal__descrp__h3 {
@@ -555,7 +452,6 @@ body {
     margin: auto;
     font-size: medium;
     line-height: 30px;
-    top: 10px;
 }
 
 .numeros {
@@ -574,17 +470,64 @@ body {
     border: solid 2px black;
     padding-left: 5px;
     border-radius: 2px;
-    width: 200px;
+    width: 80%;
+    max-width: 500px;
 }
 
 .numeros__resultado {
     background-color: rgb(239, 245, 248);
     border: solid 2px black;
     border-radius: 2px;
-    width: 220px;
+    width: 85%;
+    max-width: 550px;
     height: 90px;
     font-size: xx-large;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .sidebar__link3 {
+        font-size: xx-large;
+    }
+
+    .finan__principal__descrp__h2 {
+        top: 5px;
+    }
+
+    .finan__principal__descrp__h3 {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .sidebar__link3 {
+        font-size: 33px;
+    }
+    .finan {
+        width: 82%;
+        margin-left: 17%;
+        top: 100px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .finan__principal {
+        position: relative;
+        border: solid black;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        border-radius: 3px;
+        height: 600px;
+        background-color: rgb(225, 238, 242);
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .sidebar__link3 {
+        font-size: 38px;
+    }
 }
 
 /*Ubicaciones*/
@@ -592,7 +535,6 @@ body {
 .sidebar__link4 {
     position: relative;
     font-size: x-large;
-    bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
 }
@@ -652,4 +594,22 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
     line-height: 30px;
+}
+
+@media (min-width: 768px) {
+    .sidebar__link4 {
+        font-size: xx-large;
+    }
+}
+
+@media (min-width: 1150px) {
+    .sidebar__link4 {
+        font-size: 33px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sidebar__link4 {
+        font-size: 38px;
+    }
 }

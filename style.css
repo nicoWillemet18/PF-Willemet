@@ -229,7 +229,7 @@ body {
     }
 }
 
-/*AUTOS RESPONSIVE */
+/*AUTOS*/
 
 .sidebar__link1 {
     position: relative;
@@ -266,53 +266,62 @@ body {
 
 .catalogo__tarjeta__info {
     position: relative;
-    top: 5px;
+    line-height: 30px;
+    top: 5px; 
 }
 
 .catalogo__tarjeta__img1 {
     position: relative;
+    height: 85%;
     right: 250px;
     width: 750px;
 }
 
 .catalogo__tarjeta__img2 {
     position: relative;
+    height: 85%;
     right: 230px;
     width: 630px;
 }
 
 .catalogo__tarjeta__img3 {
     position: relative;
+    height: 85%;
     right: 180px;
     width: 750px;
 }
 
 .catalogo__tarjeta__img4 {
     position: relative;
+    height: 85%;
     right: 280px;
     width: 700px;
 }
 
 .catalogo__tarjeta__img5 {
     position: relative;
+    height: 85%;
     right: 80px;
     width: 680px;
 }
 
 .catalogo__tarjeta__img6 {
     position: relative;
+    height: 85%;
     right: 50px;
     width: 640px;
 }
 
 .catalogo__tarjeta__img7 {
     position: relative;
+    height: 85%;
     right: 60px;
     width: 660px;
 }
 
 .catalogo__tarjeta__img8 {
     position: relative;
+    height: 85%;
     right: 130px;
     width: 630px;
 }
@@ -372,7 +381,7 @@ body {
     }
     .catalogo {
         width: 82%;
-        margin-left: 235px;
+        margin-left: 330px;
         grid-template-columns: 25% 25% 25% 25%;
     }
     
@@ -405,58 +414,59 @@ body {
 
 .sidebar__link2 {
     position: relative;
-    font-size: 40px;
+    font-size: x-large;
     bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
 }
 
+
 .catalogo__tarjeta__img9 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 60px;
 }
 
 .catalogo__tarjeta__img10 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 140px;
 }
 
 .catalogo__tarjeta__img11 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 100px;
 }
 
 .catalogo__tarjeta__img12 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 30px;
 }
 
 .catalogo__tarjeta__img13 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 50px;
 }
 
 .catalogo__tarjeta__img14 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 100px;
 }
 
 .catalogo__tarjeta__img15 {
     position: relative;
-    height: 80%;
+    height: 85%;
     right: 280px;
 }
 
 .catalogo__tarjeta__img16 {
     position: relative;
-    height: 80%;
-    width: 600px;
+    height: 85%;
+    width: 700px;
     right: 230px;
 }
 
@@ -464,7 +474,7 @@ body {
 
 .sidebar__link3 {
     position: relative;
-    font-size: 37.5px;
+    font-size: x-large;
     bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
@@ -473,14 +483,12 @@ body {
 .finan {
     position: relative;
     background-color: rgb(195, 218, 225);
-    top: 130px;
-    left: 110px;
-    width: 80%;
+    top: 160px;
+    width: 95%;
     margin: auto;
-    height: 1000px;
-    display: flex;
+    display: grid;
     padding: 10px;
-    flex-direction: column;
+    grid-template-columns: 100%;
     box-shadow: 3px 3px 10px black;
     border-radius: 5px;
 }
@@ -488,6 +496,7 @@ body {
 .finan__tit {
     position: relative;
     margin: auto;
+    margin-bottom: 10px;
     text-align: center;
     width: 400px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -499,27 +508,36 @@ body {
     border: solid black;
     margin-right: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
     border-radius: 3px;
-    height: 450px;
+    height: 600px;
 }
+
 
 .finan__principal__h2 {
     position: relative;
     text-align: center;
     font-size: xx-large;
     height: 80px;
-    top: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+  .box{
+    width: 100%;
+  }
+
+  .box img{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+  } 
 
 .finan__principal__descrp {
     background-color: rgb(225, 238, 242);
     position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px;
 }
 
 .finan__principal__descrp__h2 {
@@ -527,27 +545,24 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: xx-large;
-    top: 50px;
+    top: 40px;
 }
 
 .finan__principal__descrp__h3 {
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    top: 20px;
     margin: auto;
     font-size: medium;
     line-height: 30px;
+    top: 10px;
 }
 
 .numeros {
     position: relative;
     display: grid;
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 30% 30%;
-    grid-column-gap: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    grid-template-rows: 25% 25%;
     top: 80px;
     align-items: baseline;
     height: 400px;
@@ -559,14 +574,14 @@ body {
     border: solid 2px black;
     padding-left: 5px;
     border-radius: 2px;
-    width: 400px;
+    width: 200px;
 }
 
 .numeros__resultado {
     background-color: rgb(239, 245, 248);
     border: solid 2px black;
     border-radius: 2px;
-    width: 400px;
+    width: 220px;
     height: 90px;
     font-size: xx-large;
     text-align: center;
@@ -576,7 +591,7 @@ body {
 
 .sidebar__link4 {
     position: relative;
-    font-size: 37.5px;
+    font-size: x-large;
     bottom: 5px;
     text-decoration: underline;
     color: rgb(0, 86, 179);
@@ -584,21 +599,20 @@ body {
 
 .ubicaciones {
     position: relative;
-    display: flex;
-    flex-direction: row;
     background-color: rgb(195, 218, 225);
-    top: 130px;
-    width: 80%;
-    height: 600px;
+    top: 160px;
+    width: 95%;
+    height: 900px;
     margin: auto;
-    left: 100px;
-    padding: 40px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 100%;
     box-shadow: 3px 3px 10px black;
     border-radius: 5px;
 }
 
 .ubicaciones__title {
-    position: absolute;
+    position: relative;
     width: 100%;
     font-size: x-large;
     text-align: center;
@@ -607,33 +621,35 @@ body {
 }
 
 .ubicaciones__buscador {
-    position: absolute;
+    position: relative;
     height: 30px;
-    width: 260px;
+    width: 60%;
+    max-width: 350px;
     padding-left: 8px;
     border-radius: 3px;
     border: none;
     background-color: aliceblue;
     box-shadow: 1px 1px 2px black;
-    z-index: 50;
-    top: 100px;
-    left: 50px;
 }
 
-.ubicaciones__mapa {
+.boxx {
     position: relative;
-    top: 50px;
+}
+
+.boxx iframe{
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
 }
 
 .ubicaciones__descrp {
     position: relative;
-    left: 20px;
-    top: 130px;
+    top: 20px;
     text-align: center;
 }
 
 .ubicaciones__descrp__h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-large;
-    line-height: 40px;
+    font-size: large;
+    line-height: 30px;
 }

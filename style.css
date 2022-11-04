@@ -151,8 +151,7 @@ body {
     }
 
     .carousel-caption {
-        font-size: large;
-        bottom: 75%;
+        bottom: 73%;
     }
 
     .footer {
@@ -209,9 +208,9 @@ body {
     }
 
     .carousel-caption {
-        font-size: x-large;
         bottom: 75%;
     }
+
 
     .carousel-indicators {
         bottom: 20%;
@@ -231,6 +230,7 @@ body {
     .sidebar__link {
         font-size: 35px;
     }
+
     .redes {
         height: 75px;
     }
@@ -240,8 +240,8 @@ body {
     }
 
     .carousel-caption {
-        font-size: xx-large;
-        bottom: 78%;
+        bottom: 80%;
+        font-size: x-large;
     }
 }
 
@@ -416,14 +416,15 @@ body {
     height: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  .box{
+
+.box{
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
   }
 
-  .box img{
+.box img{
     width: 100%;
     height: 100%;
     max-width: 800px;
@@ -443,7 +444,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: xx-large;
-    top: 30px;
+    top: 60px;
 }
 
 .finan__principal__descrp__h3 {
@@ -451,7 +452,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: auto;
-    font-size: medium;
+    font-size: large;
     line-height: 30px;
 }
 
@@ -521,7 +522,7 @@ body {
     }
 
     .finan__principal__descrp  {
-        padding: 40px; 
+        padding: 55px; 
     }
 
     .box{
@@ -606,7 +607,7 @@ body {
 
 .ubicaciones__descrp__h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
+    font-size: 15px;
     line-height: 30px;
 }
 
@@ -643,6 +644,10 @@ body {
         top: 120px;
         left: 240px;
         width: 450px;
+    }
+
+    .ubicaciones__descrp__h3 {
+        padding-left: 10px;
     }
 
     .container {

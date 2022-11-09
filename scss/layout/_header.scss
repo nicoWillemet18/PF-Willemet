@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    @include sizes(100%, 80px);
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    align-items: center;
+    z-index: 500;
+        .header__logo {
+           width: 50px;
+           border-radius: 15px;
+           box-shadow: $shadow-logo;
+        }
+        .header__name {
+           color: $color-primario;
+           text-decoration: underline $color-primario;
+           font-size: large;
+           padding: 20px;
+           margin-left: 5%;       
+                &:hover {
+                   color: $color-hover;
+                   text-decoration: underline;
+               }
+        }
+        .header__search {
+            width: 30%;
+            margin-right: 40px;
+            border-radius: $border-radius;
+        }
+        .btn {
+            position: relative;
+            @include sizes(80px, 30px);
+            font-size: 11px;
+            background-color: $color-info;
+        }
+        .dropdown-menu {
+            background-color: $color-info;
+        }
+}

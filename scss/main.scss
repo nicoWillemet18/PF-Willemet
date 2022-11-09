@@ -1,0 +1,182 @@
+@import 'base/resets';
+
+
+.texto {
+    position: relative;
+    line-height: 30px;
+    padding: 20px;
+    top: 200px;
+    margin: auto;
+    width: 85%;
+    background-color: $color-section;
+    border-radius: $border-radius; 
+    box-shadow: $shadow;
+}
+
+/*AUTOS Y CAMIONETAS*/
+.sidebar__link1 {
+    position: relative;
+    font-size: x-large;
+    text-decoration: underline;
+    color: rgb(0, 86, 179);
+}
+.sidebar__link2 {
+    @extend .sidebar__link1
+}
+.catalogo__tarjeta {
+    overflow: hidden;
+    @include sizes(90%, 550px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border-radius: $border-radius;
+    background-color: $color-primario;
+    text-align: center;
+    align-items: center;
+        &:hover {
+            box-shadow: $shadow;
+        }
+        .catalogo__tarjeta__img{
+            @include sizes(auto, 85%);
+        }
+       .catalogo__tarjeta__info {
+           position: relative;
+           line-height: 30px;
+           top: 5px; 
+       }
+    }
+.pag {
+    position: relative;
+    top: 230px;
+}   
+
+/*Financiación*/
+.sidebar__link3 {
+    @extend .sidebar__link1
+}
+.finan__tit {
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 400px;
+    font-family: $font-secundario;
+    text-decoration: underline rgba(0, 0, 0, 0.6);
+}
+.finan__principal {
+    position: relative;
+    border: solid black;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1400px;
+    border-radius: $border-radius;
+    height: 600px;
+    background-color: $color-section;
+        .box{
+            width: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+               .box img{
+                   @include sizes(100%, 100%);
+                   max-width: 800px;
+                 } 
+        }
+        .finan__principal__descrp {
+            background-color: $color-primario;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+                    .finan__principal__descrp__h2 {
+                        position: relative;
+                        font-family: $font-secundario;
+                        text-align: center;
+                        font-size: xx-large;
+                        top: 60px;
+                    }
+                    .finan__principal__descrp__h3 {
+                        position: relative;
+                        font-family: $font-secundario;
+                        text-align: center;
+                        margin: auto;
+                        font-size: large;
+                        line-height: 30px;
+                    }
+        }
+    }
+
+.numeros {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 25% 25%;
+    top: 80px;
+    justify-items: center;
+    align-items: baseline;
+    height: 400px;
+            .numeros__input {
+                background-color: $color-primario;
+                @include sizes(80%, 45px);
+                border: solid 2px black;
+                padding-left: 5px;
+                border-radius: $border-radius;
+                max-width: 500px;
+            }
+            .numeros__resultado {
+                background-color: $color-primario;
+                @include sizes(85%, 90px);
+                border: solid 2px black;
+                border-radius: $border-radius;
+                max-width: 550px;
+                font-size: xx-large;
+                text-align: center;
+            }
+}
+
+/*Ubicaciones*/
+.sidebar__link4 {
+    @extend .sidebar__link1
+}
+.ubicaciones__title {
+    position: relative;
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    font-family: $font-secundario;
+    text-decoration: underline rgba(0, 0, 0, 0.6);
+}
+.ubicaciones__buscador {
+    position: relative;
+    @include sizes(350px, 30px);
+    padding-left: 8px;
+    border-radius: $border-radius;
+    border: none;
+    background-color: $color-primario;
+    box-shadow: $shadow;
+}
+.boxx {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+            .boxx iframe{
+                @include sizes(100%, 500px);
+                max-width: 800px;
+            }
+}
+
+.ubicaciones__descrp {
+    position: relative;
+    top: 20px;
+    text-align: center;
+        .ubicaciones__descrp__h3 {
+            font-family: $font-secundario;
+            font-size: 18px;
+            line-height: 30px;
+        }
+}

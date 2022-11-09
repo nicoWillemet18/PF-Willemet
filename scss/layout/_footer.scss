@@ -1,0 +1,12 @@
+.footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-secundario;
+    top: 300px;
+        .footer__h4 {
+             color: $color-primario;
+             font-size: 13.5px;
+        }
+}

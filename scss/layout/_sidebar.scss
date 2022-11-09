@@ -1,0 +1,35 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    font-size: 19px;
+    background-color: $color-primario;
+    top: 80px;
+    @include sizes(100%, 50px);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+       .sidebar__link {
+           color: $color-link;
+        }
+} 
+.redes {
+    position: relative;
+    top: 140px;
+    border-radius: $border-radius;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    background-color: $color-info;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 20px;
+    justify-items: center;
+         .redes__h3 {
+             font-size: 15px;
+             margin-right: 10px;
+         }
+         .redes__img {
+             width: 80px;
+             height: 20px;
+         }
+ }       
+     

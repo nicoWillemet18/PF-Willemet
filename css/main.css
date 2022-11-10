@@ -238,7 +238,7 @@ body {
 
 .finan__principal {
   position: relative;
-  border: solid black 2px;
+  border: solid black 3px;
   margin-right: 5px;
   display: flex;
   flex-direction: column;
@@ -253,6 +253,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: aliceblue;
 }
 .finan__principal__box img {
   height: 100%;
@@ -266,13 +267,14 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  justify-content: space-around;
 }
 .finan__principal__descrp h2 {
   position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  top: 28px;
   font-size: xx-large;
-  top: 60px;
 }
 .finan__principal__descrp h3 {
   position: relative;
@@ -390,11 +392,8 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .finan__principal__descrp__h2 {
-    top: 5px;
-  }
   .finan__principal__descrp__h3 {
-    padding: 15px;
+    padding: 25px;
   }
   .sidebar__link2 {
     font-size: xx-large;

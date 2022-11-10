@@ -1,10 +1,9 @@
-.paginaPrincipal {
+/*PRINCIPALES*/
+
+.pagina__principal {
     position: relative;
     top: 150px;
 }
-
-/*AUTOS Y CAMIONETAS*/
-
 .catalogo {
     position: relative;
     background-color: $color-section;
@@ -17,21 +16,31 @@
     box-shadow: $shadow;
     border-radius: $border-radius;
 }
-
-/*Financiación*/
-
 .finan {
-    @extend .catalogo;
+    position: relative;
+    background-color: $color-section;
+    top: 160px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 100%;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
 }
-
-/*Ubicaciones*/
-
 .ubicaciones {
-    @extend .catalogo;
+    position: relative;
+    background-color: $color-section;
+    top: 160px;
+    width: 95%;
+    margin: auto;
     display: flex;
+    padding: 10px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 900px;
 }
 

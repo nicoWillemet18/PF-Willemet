@@ -1,18 +1,557 @@
-/* Error: Undefined variable.
- *   ,
- * 5 |     font-family: $font-principal;
- *   |                  ^^^^^^^^^^^^^^^
- *   '
- *   scss\base\_resets.scss 5:18  @import
- *   scss\main.scss 1:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      font-family: $font-principal;\d\a   \2502                   ^^^^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_resets.scss 5:18  @import\a   scss\\main.scss 1:9           root stylesheet";
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  background-color: aliceblue;
+}
+
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  z-index: 500;
+}
+.header__logo {
+  width: 50px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px white;
+}
+.header__name {
+  color: aliceblue;
+  text-decoration: underline aliceblue;
+  font-size: large;
+  padding: 20px;
+  margin-left: 5%;
+}
+.header__name:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+.header__search {
+  width: 30%;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+.btn {
+  position: relative;
+  height: 30px;
+  width: 80px;
+  font-size: 11px;
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: rgb(238, 238, 238);
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  font-size: 19px;
+  background-color: aliceblue;
+  top: 80px;
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 200;
+}
+.sidebar__link {
+  color: blueviolet;
+}
+.sidebar__link1 {
+  position: relative;
+  font-size: x-large;
+  text-decoration: underline;
+  color: rgb(0, 86, 179);
+}
+.sidebar__link2 {
+  position: relative;
+  font-size: x-large;
+  text-decoration: underline;
+  color: rgb(0, 86, 179);
+}
+.sidebar__link3 {
+  position: relative;
+  font-size: x-large;
+  text-decoration: underline;
+  color: rgb(0, 86, 179);
+}
+.sidebar__link4 {
+  position: relative;
+  font-size: x-large;
+  text-decoration: underline;
+  color: rgb(0, 86, 179);
+}
+
+.redes {
+  position: relative;
+  top: 140px;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+  display: grid;
+  background-color: rgb(238, 238, 238);
+  grid-template-columns: 100%;
+  grid-template-rows: 20px 20px;
+  justify-items: center;
+  box-shadow: 2px 2px 10px black;
+}
+.redes__h3 {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.redes__img {
+  height: 20px;
+  width: 80px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  top: 300px;
+}
+.footer__h4 {
+  color: aliceblue;
+  font-size: 13.5px;
+}
+
+/*PRINCIPALES*/
+.pagina__principal {
+  position: relative;
+  top: 150px;
+}
+
+.catalogo {
+  position: relative;
+  background-color: #b0a4c4;
+  top: 160px;
+  width: 95%;
+  margin: auto;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 100%;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+}
+
+.finan {
+  position: relative;
+  background-color: #b0a4c4;
+  top: 160px;
+  width: 95%;
+  margin: auto;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 100%;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+}
+
+.ubicaciones {
+  position: relative;
+  background-color: #b0a4c4;
+  top: 160px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 900px;
+}
+
+/*CONTEDIDO DE LOS PRINCIPALES*/
+.texto {
+  position: relative;
+  line-height: 30px;
+  padding: 20px;
+  top: 200px;
+  margin: auto;
+  width: 85%;
+  background-color: #b0a4c4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px black;
+}
+
+/*AUTOS Y CAMIONETAS*/
+.catalogo__tarjeta {
+  overflow: hidden;
+  height: 550px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  text-align: center;
+  align-items: center;
+}
+.catalogo__tarjeta:hover {
+  box-shadow: 2px 2px 10px black;
+}
+.catalogo__tarjeta__img {
+  height: 85%;
+  width: auto;
+}
+.catalogo__tarjeta__info {
+  position: relative;
+  line-height: 30px;
+  top: 5px;
+}
+
+.pag {
+  position: relative;
+  top: 230px;
+}
+
+/*Financiación*/
+.finan__tit {
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 400px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline rgba(0, 0, 0, 0.6);
+}
+
+.finan__principal {
+  position: relative;
+  border: solid black 2px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1400px;
+  border-radius: 5px;
+  height: 550px;
+  background-color: #b0a4c4;
+}
+.finan__principal__box {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.finan__principal__box img {
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+}
+.finan__principal__descrp {
+  background-color: aliceblue;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.finan__principal__descrp h2 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  top: 60px;
+}
+.finan__principal__descrp h3 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: large;
+  line-height: 30px;
+}
+
+.numeros {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25%;
+  top: 80px;
+  justify-items: center;
+  align-items: baseline;
+  height: 400px;
+}
+.numeros__input {
+  background-color: aliceblue;
+  height: 45px;
+  width: 80%;
+  border: solid 2px black;
+  padding-left: 5px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+.numeros__resultado {
+  background-color: aliceblue;
+  height: 90px;
+  width: 85%;
+  border: solid 2px black;
+  border-radius: 5px;
+  max-width: 550px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/*Ubicaciones*/
+.ubicaciones__title {
+  position: relative;
+  width: 100%;
+  font-size: x-large;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline rgba(0, 0, 0, 0.6);
+}
+
+.ubicaciones__buscador {
+  position: relative;
+  height: 30px;
+  width: 350px;
+  padding-left: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 10px black;
+}
+
+.boxx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxx iframe {
+  height: 500px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.ubicaciones__descrp {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+.ubicaciones__descrp__h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  /*PRINCIPAL*/
+  .header__logo {
+    width: 60px;
+  }
+  .header__name {
+    font-size: x-large;
+  }
+  .btn {
+    height: 30px;
+    width: 100px;
+    font-size: 14px;
+  }
+  .sidebar__link {
+    font-size: x-large;
+  }
+  .carousel-caption {
+    bottom: 73%;
+  }
+  .footer {
+    z-index: 500;
+  }
+  .footer__h4 {
+    font-size: 15px;
+  }
+  /*AUTOS, CAMIONETAS Y FINANCIACIÓN*/
+  .sidebar__link1 {
+    font-size: xx-large;
+  }
+  .catalogo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .finan__principal__descrp__h2 {
+    top: 5px;
+  }
+  .finan__principal__descrp__h3 {
+    padding: 15px;
+  }
+  .sidebar__link2 {
+    font-size: xx-large;
+  }
+  .sidebar__link3 {
+    font-size: xx-large;
+  }
+  .sidebar__link4 {
+    font-size: xx-large;
+  }
+}
+@media (min-width: 1100px) {
+  .header__logo {
+    margin-left: 50px;
+  }
+  .header__name {
+    width: 110%;
+    font-size: 40px;
+  }
+  .sidebar {
+    width: 16%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sidebar__link {
+    font-size: 29px;
+  }
+  .sidebar__link2 {
+    font-size: 31px;
+  }
+  .sidebar__link3 {
+    font-size: 31px;
+  }
+  .sidebar__link4 {
+    font-size: 31px;
+  }
+  .redes {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 80px;
+    width: 15%;
+    z-index: 200;
+    top: 87%;
+    left: 10px;
+  }
+  .pagina__principal {
+    width: 82%;
+    margin-left: 17%;
+    top: 100px;
+  }
+  .carousel-indicators {
+    bottom: 20%;
+  }
+  .carousel-caption {
+    bottom: 75%;
+  }
+  .texto {
+    width: 80%;
+    margin-right: 30px;
+  }
+  .footer__h4 {
+    font-size: 17px;
+  }
+  .sidebar__link1 {
+    font-size: 33px;
+  }
+  .catalogo {
+    width: 82%;
+    margin-left: 17%;
+    top: 100px;
+  }
+  .finan {
+    width: 82%;
+    margin-left: 17%;
+    top: 100px;
+  }
+  .ubicaciones {
+    width: 82%;
+    margin-left: 17%;
+    top: 100px;
+  }
+}
+@media (min-width: 1350px) {
+  /*PRINCIPAL*/
+  .sidebar__link {
+    font-size: 35px;
+  }
+  .redes {
+    height: 75px;
+  }
+  .paginaPrincipal {
+    top: 100px;
+  }
+  .carousel-caption {
+    bottom: 80%;
+    font-size: x-large;
+  }
+  /*AUTOS Y CAMIONETAS*/
+  .sidebar__link1 {
+    font-size: 38px;
+  }
+  .sidebar__link2 {
+    font-size: 38px;
+  }
+  .catalogo {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+  /*FINANCIACIÓN*/
+  .sidebar__link3 {
+    font-size: 38px;
+  }
+  .finan__principal {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 555px;
+  }
+  .finan__principal__box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .finan__principal__box img {
+    height: auto;
+    max-width: 100%;
+  }
+  .finan__principal__descrp {
+    padding: 55px;
+  }
+  /*UBICACIONES*/
+  .sidebar__link4 {
+    font-size: 38px;
+  }
+  .ubicaciones {
+    height: 780px;
+    padding-bottom: 30px;
+  }
+  .ubicaciones__buscador {
+    position: absolute;
+    top: 120px;
+    left: 240px;
+    width: 450px;
+  }
+  .ubicaciones__container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+  }
+  .ubicaciones__descrp__h3 {
+    padding-right: 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

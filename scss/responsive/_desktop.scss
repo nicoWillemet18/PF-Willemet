@@ -1,6 +1,5 @@
 @media (min-width: 1100px) {
 
-    /*PRINCIPAL*/
     .header__logo {
         margin-left: 50px;
     }
@@ -9,37 +8,47 @@
         font-size: 40px;
     }
     .sidebar {
-        @include sizes(16%, 75%);
+        width: 16%;
+        height: 75%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-           .sidebar__link {
+           &__link {
                font-size: 29px;
            }
-           .redes {
-               position: fixed;
-               display: flex;
-               align-items: center;
-               text-align: center;
-               flex-direction: column;
-               padding-top: 10px;
-               @include sizes(15%, 80px);
-               z-index: 200;
-               top: 87%;
-               left: 10px;
-           }
-    }    
-    .paginaPrincipal {
+    } 
+    .sidebar__link2 {
+        font-size: 31px;
+    }
+    .sidebar__link3 {
+        font-size: 31px;
+    }
+    .sidebar__link4 {
+        font-size: 31px;
+    }   
+    .redes {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 10px;
+        @include sizes (15%, 80px);
+        z-index: 200;
+        top: 87%;
+        left: 10px;
+    }
+    .pagina__principal {
         width: 82%;
         margin-left: 17%;
         top: 100px;
-           .carousel-indicators {
-               bottom: 20%;
-           }
-           .carousel-caption {
-               bottom: 75%;
-           }
+    }
+    .carousel-indicators {
+        bottom: 20%;
+    }
+    .carousel-caption {
+        bottom: 75%;
     }
     .texto {
         width: 80%;
@@ -49,12 +58,7 @@
     .footer__h4 {
         font-size: 17px;
     }
-
-    /*AUTOS Y CAMIONETAS*/
     .sidebar__link1 {
-        font-size: 33px;
-    }
-    .sidebar__link2 {
         font-size: 33px;
     }
     .catalogo {
@@ -63,14 +67,6 @@
         top: 100px;
     }
 
-    /*FINANCIACIÓN Y UBICACIONES*/
-
-    .sidebar__link3 {
-        font-size: 33px;
-    }
-    .sidebar__link4 {
-        font-size: 33px;
-    }
     .finan {
         width: 82%;
         margin-left: 17%;

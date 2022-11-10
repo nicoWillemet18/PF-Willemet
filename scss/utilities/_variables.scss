@@ -1,17 +1,16 @@
-$global-color-primario: global aliceblue;
-$global-color-secundario: global black;
-$global-color-link: global blueviolet;
-$global-color-section: global rgb(223, 235, 238);
-$global-color-info: global rgb(238, 238, 238);
-$global-border-radius: global 5px;
-$global-shadow: global 2px 2px 10px black;
-$global-shadow-logo: global 2px 2px 3px white;
-$global-font-principal: global Arial, Helvetica, sans-serif;
-$global-font-secundario: global 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$color-primario: aliceblue;
+$color-secundario: black;
+$color-link: blueviolet;
+$color-section: #b0a4c4;
+$color-info: rgb(238, 238, 238);
+$border-radius: 5px;
+$shadow: 2px 2px 10px black;
+$shadow-logo: 2px 2px 3px white;
+$font-principal: Arial, Helvetica, sans-serif;
+$font-secundario: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
- }
- 
+}

@@ -1,0 +1,59 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    font-size: 19px;
+    background-color: $color-primario;
+    top: 80px;
+    @include sizes (100%, 50px);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 200;
+        &__link {
+           color: $color-link;
+        }
+        &__link1 {
+            position: relative;
+            font-size: x-large;
+            text-decoration: underline;
+            color: rgb(0, 86, 179);
+        }
+        &__link2 {
+            position: relative;
+            font-size: x-large;
+            text-decoration: underline;
+            color: rgb(0, 86, 179);
+        }
+        &__link3 {
+            position: relative;
+            font-size: x-large;
+            text-decoration: underline;
+            color: rgb(0, 86, 179);
+        }
+        &__link4 {
+            position: relative;
+            font-size: x-large;
+            text-decoration: underline;
+            color: rgb(0, 86, 179);
+        }
+} 
+.redes {
+    position: relative;
+    top: 140px;
+    border-radius: $border-radius;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    background-color: $color-info;
+    grid-template-columns: 100%;
+    grid-template-rows: 20px 20px;
+    justify-items: center;
+    box-shadow: $shadow;
+         &__h3 {
+             font-size: 15px;
+             margin-right: 10px;
+         }
+         &__img {
+            @include sizes (80px, 20px);
+         }
+ }       
+     

@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build": "sass scss:css",
+    "watch": "sass scss:css --watch scss/styles.scss css/styles.css"
   },
   "author": "Nicolás Willemet",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
   }
 }

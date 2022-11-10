@@ -1,0 +1,47 @@
+/*PRINCIPALES*/
+
+.pagina__principal {
+    position: relative;
+    top: 150px;
+}
+.catalogo {
+    position: relative;
+    background-color: $color-section;
+    top: 160px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 100%;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+}
+.finan {
+    position: relative;
+    background-color: $color-section;
+    top: 160px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 100%;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+}
+.ubicaciones {
+    position: relative;
+    background-color: $color-section;
+    top: 160px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 900px;
+}
+
+  

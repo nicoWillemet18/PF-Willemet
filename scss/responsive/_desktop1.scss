@@ -1,0 +1,73 @@
+@media (min-width: 1350px) {
+
+/*PRINCIPAL*/
+    .sidebar__link {
+        font-size: 35px;
+    }
+    .redes {
+        height: 75px;
+    }
+    .paginaPrincipal {
+        top: 100px;
+    }
+    .carousel-caption {
+        bottom: 80%;
+        font-size: x-large;
+    }
+
+/*AUTOS Y CAMIONETAS*/
+    .sidebar__link1 {
+        font-size: 38px;
+    }
+    .sidebar__link2 {
+        font-size: 38px;
+    }
+    .catalogo {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+
+/*FINANCIACIÓN*/
+    .sidebar__link3 {
+        font-size: 38px;
+    }
+    .finan__principal {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        height: 555px;
+               &__box{
+                   width: 100%;
+                   display: flex;
+                   flex-direction: row;
+                      & img{
+                          height: auto;
+                          max-width: 100%;
+                      } 
+                }
+                &__descrp  {
+                    padding: 55px; 
+                } 
+    }
+    
+/*UBICACIONES*/  
+    .sidebar__link4 {
+        font-size: 38px;
+    }  
+    .ubicaciones {
+        height: 780px;
+        padding-bottom: 30px;
+           &__buscador {
+               position: absolute;
+               top: 120px;
+               left: 240px;
+               width: 450px;
+           }
+           &__container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            align-items: center;
+            }
+            &__descrp__h3 {
+                padding-right: 50px;
+            }
+    }     
+}

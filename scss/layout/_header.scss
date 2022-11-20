@@ -9,14 +9,14 @@
     align-items: center;
     z-index: 500;
         &__logo {
-           width: 50px;
-           border-radius: 15px;
+           width: 40px;
+           border-radius: 10px;
            box-shadow: $shadow-logo;
         }
         &__name {
            color: $color-primario;
            text-decoration: underline $color-primario;
-           font-size: large;
+           font-size: 15px;
            padding: 20px;
            margin-left: 5%;       
                 &:hover {
@@ -25,16 +25,17 @@
                }
         }
         &__search {
-            width: 30%;
-            margin-right: 40px;
+            @include sizes (100%, 25px);
+            margin-right: 3px;
             border-radius: $border-radius;
         }
 }        
 
 .btn {
     position: relative;
-    @include sizes (80px, 30px);
+    @include sizes (80px, 20px);
     font-size: 11px;
+    padding: 0px;
     background-color: $color-info;
     color: $color-secundario;
 }

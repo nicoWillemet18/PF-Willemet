@@ -1,0 +1,34 @@
+@media (min-width: 500px) {
+    .header__logo {
+        width: 50px;
+        border-radius: 15px;
+    }
+    .header__name {
+        font-size: large;
+    }
+    .header__search {
+        width: 30%;
+        margin-right: 40px;
+    }
+    .sidebar {
+        font-size: 19px;
+    }
+    .ubicaciones {
+        height: 900px;
+    }
+    .btn {
+    @include sizes (80px, 30px);
+    }
+    .sidebar__link1{
+        font-size: x-large;
+    }
+    .sidebar__link2{
+        font-size: x-large;
+    }
+    .sidebar__link3{
+        font-size: x-large;
+    }
+    .sidebar__link4{
+        font-size: x-large;
+    }
+}

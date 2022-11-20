@@ -23,14 +23,14 @@ body {
   z-index: 500;
 }
 .header__logo {
-  width: 50px;
-  border-radius: 15px;
+  width: 40px;
+  border-radius: 10px;
   box-shadow: 2px 2px 3px white;
 }
 .header__name {
   color: aliceblue;
   text-decoration: underline aliceblue;
-  font-size: large;
+  font-size: 15px;
   padding: 20px;
   margin-left: 5%;
 }
@@ -39,16 +39,18 @@ body {
   text-decoration: underline;
 }
 .header__search {
-  width: 30%;
-  margin-right: 40px;
+  height: 25px;
+  width: 100%;
+  margin-right: 3px;
   border-radius: 5px;
 }
 
 .btn {
   position: relative;
-  height: 30px;
+  height: 20px;
   width: 80px;
   font-size: 11px;
+  padding: 0px;
   background-color: rgb(238, 238, 238);
   color: black;
 }
@@ -60,12 +62,14 @@ body {
 .sidebar {
   position: fixed;
   display: flex;
-  font-size: 19px;
+  font-size: 15px;
   background-color: aliceblue;
   top: 80px;
   height: 50px;
   width: 100%;
   justify-content: space-around;
+  padding-left: 5px;
+  padding-right: 5px;
   align-items: center;
   z-index: 200;
 }
@@ -74,25 +78,25 @@ body {
 }
 .sidebar__link1 {
   position: relative;
-  font-size: x-large;
+  font-size: 18px;
   text-decoration: underline;
   color: rgb(0, 86, 179);
 }
 .sidebar__link2 {
   position: relative;
-  font-size: x-large;
+  font-size: 18px;
   text-decoration: underline;
   color: rgb(0, 86, 179);
 }
 .sidebar__link3 {
   position: relative;
-  font-size: x-large;
+  font-size: 18px;
   text-decoration: underline;
   color: rgb(0, 86, 179);
 }
 .sidebar__link4 {
   position: relative;
-  font-size: x-large;
+  font-size: 18px;
   text-decoration: underline;
   color: rgb(0, 86, 179);
 }
@@ -177,7 +181,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  height: 900px;
+  height: 1050px;
 }
 
 /*CONTEDIDO DE LOS PRINCIPALES*/
@@ -197,7 +201,7 @@ body {
 .catalogo__tarjeta {
   overflow: hidden;
   height: 550px;
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -231,7 +235,7 @@ body {
   margin: auto;
   margin-bottom: 10px;
   text-align: center;
-  width: 400px;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: underline rgba(0, 0, 0, 0.6);
 }
@@ -327,8 +331,8 @@ body {
 
 .ubicaciones__buscador {
   position: relative;
-  height: 30px;
-  width: 350px;
+  height: 25px;
+  width: 300px;
   padding-left: 8px;
   border-radius: 5px;
   border: none;
@@ -359,6 +363,41 @@ body {
   line-height: 30px;
 }
 
+@media (min-width: 500px) {
+  .header__logo {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .header__name {
+    font-size: large;
+  }
+  .header__search {
+    width: 30%;
+    margin-right: 40px;
+  }
+  .sidebar {
+    font-size: 19px;
+  }
+  .ubicaciones {
+    height: 900px;
+  }
+  .btn {
+    height: 30px;
+    width: 80px;
+  }
+  .sidebar__link1 {
+    font-size: x-large;
+  }
+  .sidebar__link2 {
+    font-size: x-large;
+  }
+  .sidebar__link3 {
+    font-size: x-large;
+  }
+  .sidebar__link4 {
+    font-size: x-large;
+  }
+}
 @media (min-width: 768px) {
   /*PRINCIPAL*/
   .header__logo {

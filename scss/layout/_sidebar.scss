@@ -1,11 +1,13 @@
 .sidebar {
     position: fixed;
     display: flex;
-    font-size: 19px;
+    font-size: 15px;
     background-color: $color-primario;
     top: 80px;
     @include sizes (100%, 50px);
     justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
     align-items: center;
     z-index: 200;
         &__link {
@@ -13,25 +15,25 @@
         }
         &__link1 {
             position: relative;
-            font-size: x-large;
+            font-size: 18px;
             text-decoration: underline;
             color: rgb(0, 86, 179);
         }
         &__link2 {
             position: relative;
-            font-size: x-large;
+            font-size: 18px;
             text-decoration: underline;
             color: rgb(0, 86, 179);
         }
         &__link3 {
             position: relative;
-            font-size: x-large;
+            font-size: 18px;
             text-decoration: underline;
             color: rgb(0, 86, 179);
         }
         &__link4 {
             position: relative;
-            font-size: x-large;
+            font-size: 18px;
             text-decoration: underline;
             color: rgb(0, 86, 179);
         }

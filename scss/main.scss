@@ -24,7 +24,7 @@
 
 .catalogo__tarjeta {
     overflow: hidden;
-    @include sizes (90%, 550px);
+    @include sizes (95%, 550px);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
     margin: auto;
     margin-bottom: 10px;
     text-align: center;
-    width: 400px;
+    width: 100%;
     font-family: $font-secundario;
     text-decoration: underline rgba(0, 0, 0, 0.6);
 }
@@ -149,7 +149,7 @@
 }
 .ubicaciones__buscador {
     position: relative;
-    @include sizes (350px, 30px);
+    @include sizes (300px, 25px);
     padding-left: 8px;
     border-radius: $border-radius;
     border: none;
@@ -178,6 +178,7 @@
         }
 }
 
+@import 'responsive/mobile1';
 @import 'responsive/tablet';
 @import 'responsive/desktop';
 @import 'responsive/desktop1';
